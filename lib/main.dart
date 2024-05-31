@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:home_rent_ui/pages/detail_page.dart';
+import 'package:home_rent_ui/pages/detail_fragment.dart';
 import 'package:home_rent_ui/pages/menu_page.dart';
 
 import 'models/home.dart';
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/detail': (context) {
           Home home = ModalRoute.of(context)!.settings.arguments as Home;
-          return DetailPage(home: home);
+          return DetailFragment(home: home);
         }
       },
     );
